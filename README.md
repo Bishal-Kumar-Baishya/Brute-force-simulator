@@ -13,7 +13,9 @@ A brute force simulator is made with python
 
 
 ## About the tool
-This tool performs repeated login attempts in a flask server trying every possible passwords from a wordlist file for a username. Added `--delay` to avoid rate limiter, and for each failed attempts it logs in a file with info like IP, username, password.
+- v1: This tool performs repeated login attempts in a flask server trying every possible passwords from a wordlist file for a username. 
+- v2: Added `--delay` to avoid rate limiter, and for each failed attempts it logs in a file with info like IP, username, password and timestamp. The log file format is compatible with Log Analyzer project.
+- v3: Added lockout mechanism which locks the account after 5 attempts. It can lockout legitimate users too, and real implementations use temporary lockouts or CAPTCHA instead.
 
 
 ## Built with

@@ -26,6 +26,9 @@ def main():
         if response.text == "Access granted":
             print(f"Password found: {i}")
             break
+        elif response.text == "Account has been locked for security reasons":
+            print("Account got locked")
+            break
     else:
         print("Password not found in wordlist!")
 
