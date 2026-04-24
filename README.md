@@ -17,6 +17,8 @@ A brute force simulator is made with python
 - v2: Added `--delay` to avoid rate limiter, and for each failed attempts it logs in a file with info like IP, username, password and timestamp. The log file format is compatible with Log Analyzer project.
 - v3: Added lockout mechanism which locks the account after 5 attempts. It can lockout legitimate users too, and real implementations use temporary lockouts or CAPTCHA instead.
 
+Technically this is a dictionary attack — it tries passwords from a wordlist rather than every possible combination.
+
 
 ## Built with
 - Python 3
